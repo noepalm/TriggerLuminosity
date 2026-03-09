@@ -1,3 +1,4 @@
+source /cvmfs/cms.cern.ch/common/crab-setup.sh #needed to make CRABClient work
 # Uncommented as required ...
 #python3 submit_on_crab.py --filter=Run2022C_part*
 #python3 submit_on_crab.py --filter=Run2022Dv1_part*
@@ -7,3 +8,4 @@
 #python3 submit_on_crab.py --filter=BuToKee
 #python3 submit_on_crab.py --filter=BuToKJpsi_Toee
 #python3 submit_on_crab.py --filter=BuToKPsi2S_Toee
+python3 submit_on_crab.py --filter=Run2023*

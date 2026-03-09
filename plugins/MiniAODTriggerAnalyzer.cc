@@ -315,7 +315,7 @@ void MiniAODTriggerAnalyzer::printPathsAndObjects(const edm::Handle<edm::Trigger
   std::cout << "\n == TRIGGER PATHS= " << std::endl;
   for (unsigned int i = 0, n = triggerResultsHandle->size(); i < n; ++i) {
     std::cout << "Trigger " << triggerNames.triggerName(i) <<
-      ", prescale " << triggerPrescalesHandle->getPrescaleForIndex(i) <<
+      ", prescale " << triggerPrescalesHandle->getPrescaleForIndex<double>(i) <<
       ": " << (triggerResultsHandle->accept(i) ? "PASS" : "fail (or not run)")
 	      << std::endl;
   }

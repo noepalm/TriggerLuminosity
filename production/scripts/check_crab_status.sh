@@ -43,3 +43,10 @@
 #crab status -d TriggerLuminosity_2022Nov08/crab_Run2022F_part3 | grep -e "Task name" -e finished -e transferring -e running -e "failed  " -e idle
 #crab status -d TriggerLuminosity_2022Nov08/crab_Run2022F_part4 | grep -e "Task name" -e finished -e transferring -e running -e "failed  " -e idle
 #crab status -d TriggerLuminosity_2022Nov08/crab_Run2022F_part5 | grep -e "Task name" -e finished -e transferring -e running -e "failed  " -e idle
+
+crab status -d TriggerLuminosity_2026Feb10/crab_Run2023Cv1 | grep -e "Task name" -e finished -e transferring -e running -e "failed  " -e idle
+crab status -d TriggerLuminosity_2026Feb10/crab_Run2023Cv2 | grep -e "Task name" -e finished -e transferring -e running -e "failed  " -e idle
+crab status -d TriggerLuminosity_2026Feb10/crab_Run2023Cv3 | grep -e "Task name" -e finished -e transferring -e running -e "failed  " -e idle
+crab status -d TriggerLuminosity_2026Feb10/crab_Run2023Cv4 | grep -e "Task name" -e finished -e transferring -e running -e "failed  " -e idle
+crab status -d TriggerLuminosity_2026Feb10/crab_Run2023Dv1 | grep -e "Task name" -e finished -e transferring -e running -e "failed  " -e idle
+crab status -d TriggerLuminosity_2026Feb10/crab_Run2023Dv2 | grep -e "Task name" -e finished -e transferring -e running -e "failed  " -e idle

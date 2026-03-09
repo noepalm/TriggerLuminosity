@@ -57,6 +57,24 @@ samples:
       - 3
       - 4
       - 5
+  Run2023Cv%d:
+    dataset: /ParkingDoubleElectronLowMass/Run2023C-22Sep2023_v%d-v1/MINIAOD
+    isMC: False
+    lumimask: https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions23/Cert_Collisions2023_366442_370790_Golden.json
+    globaltag: 130X_dataRun3_PromptAnalysis_v1
+    parts:
+      - 1
+      - 2
+      - 3
+      - 4
+  Run2023Dv%d:
+    dataset: /ParkingDoubleElectronLowMass/Run2023D-22Sep2023_v%d-v1/MINIAOD
+    isMC: False 
+    lumimask: https://cms-service-dqmdc.web.cern.ch/CAF/certification/Collisions23/Cert_Collisions2023_366442_370790_Golden.json
+    globaltag: 130X_dataRun3_PromptAnalysis_v1
+    parts:
+      - 1
+      - 2
   BuToKee:
     dataset: /BuTOKEE20220826bettersplitting/jodedra-SUMMER22_MINIAOD-d5db235e2a58bcae594a314d29cbde75/USER
     isMC: True

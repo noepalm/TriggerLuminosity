@@ -18,13 +18,14 @@ from mergeJSON import *
 #inputs.append(base+'TriggerLuminosity_2022Sep30/ParkingDoubleElectronLowMass*/crab_Run2022C*_part*/220930_*/000*/output_*.json') # Era C
 #inputs.append(base+'TriggerLuminosity_2022Sep30/ParkingDoubleElectronLowMass*/crab_Run2022Dv2_part*/220930_*/000*/output_*.json') # Era Dv2
 
+# base='/eos/home-n/npalmeri/DiEleAnalyzer/trigger_prescale_lumi/'
 base='/eos/cms/store/group/phys_bphys/DiElectronX/test/trigger/'
+
 inputs = []
-inputs.append(base+'TriggerLuminosity_2022Nov11/ParkingDoubleElectronLowMass*/crab_Run2022C_part*/221111_*/000*/output_*.json') # Era C
-inputs.append(base+'TriggerLuminosity_2022Oct02/ParkingDoubleElectronLowMass*/crab_Run2022Dv1_part*/221002_*/000*/output_*.json') # Era Dv1
-inputs.append(base+'TriggerLuminosity_2022Nov11/ParkingDoubleElectronLowMass*/crab_Run2022Dv2_part*/221111_*/000*/output_*.json') # Era Dv2
-inputs.append(base+'TriggerLuminosity_2022Nov07/ParkingDoubleElectronLowMass*/crab_Run2022E_part*/221107_*/000*/output_*.json') # Era E
-inputs.append(base+'TriggerLuminosity_2022Nov08/ParkingDoubleElectronLowMass*/crab_Run2022F_part*/221108_*/000*/output_*.json') # Era F
+# inputs.append(base+'outputs/TriggerLuminosity_2025May23/ParkingDoubleElectronLowMass/crab_Run2023Dv1/250523_121944/000*/output_*.json') # Era Dv1
+# inputs.append(base+'outputs/TriggerLuminosity_2026Feb10/ParkingDoubleElectronLowMass/crab_Run2023*/*/000*/output_*.json') # All of 2023
+# inputs.append(base+'outputs/TriggerLuminosity_2026Feb10/ParkingDoubleElectronLowMass/crab_Run2023Dv1/*/000*/output_*.json') # 2023Dv1 only
+inputs.append(base+'TriggerLuminosity_2022Nov08/ParkingDoubleElectronLowMass[0-2]/crab_Run2022F_part*/*/000*/output_*.json') # 2023Dv1 only
 
 files = [ name for input in inputs for name in glob.glob(input) ]
 print("len(files)",len(files))

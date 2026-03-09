@@ -1,4 +1,4 @@
-from CRABClient.UserUtilities import config, ClientException, getUsernameFromCRIC
+from CRABClient.UserUtilities import config
 import yaml
 import datetime
 from fnmatch import fnmatch
@@ -14,7 +14,8 @@ config.General.workArea = 'TriggerLuminosity_{:s}'.format(production_tag)
 
 config.section_('Data')
 config.Data.publication = False
-config.Data.outLFNDirBase = '/store/group/phys_bphys/DiElectronX/test/trigger/{:s}'.format(config.General.workArea)
+config.Data.outLFNDirBase = '/store/user/npalmeri/DiEleAnalyzer/trigger_prescale_lumi/outputs/{:s}'.format(config.General.workArea)
+
 config.Data.inputDBS = 'global'
 
 config.section_('JobType')
@@ -25,7 +26,8 @@ config.JobType.psetName = '../test/test_cfg.py'
 
 config.section_('User')
 config.section_('Site')
-config.Site.storageSite = 'T2_CH_CERN'
+# config.Site.storageSite = 'T2_CH_CERN'
+config.Site.storageSite = 'T3_CH_CERNBOX'
 
 if __name__ == '__main__':
 

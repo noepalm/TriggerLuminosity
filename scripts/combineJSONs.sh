@@ -12,4 +12,5 @@ for FILE in jsons/current/L1_*_HLT_*_Excl_Golden.json; do
 done
 
 echo "########## DETERMINE LUMINOSITY FOR THE COMBINED JSON ##########"
-eval 'brilcalc lumi --normtag jsons/Golden_JSONs/normtag_BRIL.json -i $OUTPUT -u /fb | tail -8 | head -6'
+# eval 'brilcalc lumi --normtag jsons/Golden_JSONs/normtag_BRIL.json -i $OUTPUT -u /fb | tail -8 | head -6'
+eval 'brilcalc lumi --normtag /cvmfs/cms-bril.cern.ch/cms-lumi-pog/Normtags/normtag_PHYSICS.json -i $OUTPUT -u /fb | tail -8 | head -6'
